@@ -11,30 +11,30 @@ function Place() {
     const selectedCountry = selectedContinent.countries.find(ctry => ctry.name === country);
     const selectedDestination = selectedCountry.destinations.find(dest => dest.name === destination);
     return (
-        <div className=''>
+        <div >
             <h1 className='font-bold text-4xl m-4'>{selectedDestination.name}</h1>
-            <div>
+            <div className='flex'>
                 <div>
-                    <img src={selectedDestination.image}/>
+                    <img className="h-[30rem] w-[50rem] px-8" src={selectedDestination.image}/>
                 </div>
-                <div>
+                <div className='text-left px-4'>
                     <div>
-                        <strong>Description: </strong>{selectedDestination.description}
+                        <strong className="text-purple-600 font-bold">Description: </strong>{selectedDestination.description}
                     </div>
                     <div>
-                        <strong>Ratings: </strong>{selectedDestination.ratings}
+                        <strong className="text-purple-600 font-bold">Ratings: </strong>{selectedDestination.ratings}
                     </div>
                     <div>
-                        <strong>Reviews: </strong>{selectedDestination.reviews}
+                        <strong className="text-purple-600 font-bold">Reviews: </strong>{selectedDestination.reviews}
                     </div>
                     <div>
-                        <strong>Location: </strong>{selectedDestination.location}
+                        <strong className="text-purple-600 font-bold">Location: </strong>{selectedDestination.location}
                     </div>
                     <div>
-                        <strong>Opening Hours: </strong>{selectedDestination.openingHours}
+                        <strong className="text-purple-600 font-bold">Opening Hours: </strong>{selectedDestination.openingHours}
                     </div>
                     <div>
-                        <strong>Ticket Price: </strong>{selectedDestination.ticketPrice}
+                        <strong className="text-purple-600 font-bold">Ticket Price: </strong>{selectedDestination.ticketPrice}
                     </div>
                     <NavLink to={selectedDestination.website}>
                         Website
