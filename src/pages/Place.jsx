@@ -14,8 +14,8 @@ function Place() {
         <div >
             <h1 className='font-bold text-4xl m-4'>{selectedDestination.name}</h1>
             <div className='flex gap-8 items-center justify-center '>
-                <div className='pl-20'>
-                    <img className="h-[15rem] w-[25rem] pl-8 " src={selectedDestination.image}/>
+                <div className='pl-28'>
+                    <img className="h-[15rem] w-[25rem]  rounded-xl" src={selectedDestination.image}/>
                 </div>
                 <div className='text-left pr-24'>
                     <div>
